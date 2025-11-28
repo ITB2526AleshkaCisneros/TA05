@@ -1,1 +1,41 @@
 # TA05
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fecha Actual</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .date {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Fecha Actual</h1>
+    <p class="date" id="fecha"></p>
+
+    <script>
+        // Obtener la fecha actual
+        const fechaActual = new Date();
+        // Formatear la fecha en un formato legible
+        const fechaFormateada = fechaActual.toLocaleDateString('es-ES', {
+            weekday: 'long', // Día de la semana
+            year: 'numeric', // Año completo
+            month: 'long', // Mes completo
+            day: 'numeric'  // Día del mes
+        });
+
+        // Mostrar la fecha en el elemento con id "fecha"
+        document.getElementById('fecha').innerText = fechaFormateada;
+    </script>
+
+</body>
+</html>
