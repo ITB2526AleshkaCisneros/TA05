@@ -1,49 +1,60 @@
-<html lang="ca">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contacte</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact form">
+    <title>Contact</title>
 </head>
 
 <body>
 
 <header>
-    <h1>Formulari de Contacte</h1>
+    <h1>Form</h1>
 </header>
 
-<main style="display:flex;">
+<main>
 
-    <!-- Menú -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Inici</a></li>
-            <li><a href="projects.html">Tots els projectes</a></li>
-        </ul>
-    </nav>
+    <div style="display:flex;">
 
-    <!-- Formulario -->
-    <section>
-        <form>
+        <aside>
+            <h3>Menu</h3>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">All Projects</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-            <label>Nom:</label>
-            <input type="text" required>
+        <!-- FORM AREA -->
+        <section>
 
-            <label>Correu electrònic:</label>
-            <input type="email" required>
+            <form>
 
-            <label>Assumpte:</label>
-            <input type="text" required>
+                <label>Question 1</label>
+                <input type="text" required>
 
-            <label>Missatge:</label>
-            <textarea required></textarea>
+                <label>Question 2</label>
+                <input type="text" required>
 
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+                <label>Question 3</label>
+                <input type="text" required>
+
+                <label>Question 4</label>
+                <textarea required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+
+        </section>
+
+    </div>
 
 </main>
 
 <footer>
-    <p>Explicació final.</p>
+    <p>Explanation</p>
 </footer>
 
 </body>
