@@ -1,69 +1,58 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Main page with general information and featured projects">
+    <meta name="description" content="Home Page">
     <link rel="stylesheet" href="style.css">
-    <title>Home</title>
+    <title>TA05 - HTML / CSS</title>
 </head>
 
 <body>
 
-<!-- Header (ONLY title + date, like your drawing) -->
 <header>
     <h1>TA05 - HTML / CSS</h1>
-    <p style="text-align:right; margin:0;">March 10, 2025</p>
+    <span>12/12/2024</span>
 </header>
 
 <main>
+    <div class="layout">
 
-    <!-- Top general information block -->
-    <section>
-        <h2>General Information</h2>
-    </section>
-
-    <div style="display:flex;">
-
-        <!-- LEFT MENU (as in your drawing) -->
         <aside>
             <h3>Menu</h3>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">All Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project1.html">Project 1</a></li>
+                <li><a href="project2.html">Project 2</a></li>
+                <li><a href="projects.html">All Projects</a></li>
+                <li><a href="contact.html">Contact Form</a></li>
+            </ul>
         </aside>
 
-        <!-- FEATURED PROJECTS (two boxes) -->
         <section>
-
             <article>
-                <h3>Project 1 Title</h3>
-                <p>Project 1 description</p>
-                <img src="" alt="Project 1 image">
-                <br>
-                <a href="project1.html">View Project</a>
+                <h2>Welcome</h2>
+                <p>This is the main page with two featured projects.</p>
             </article>
 
-            <article>
-                <h3>Project 2 Title</h3>
-                <p>Project 2 description</p>
-                <img src="" alt="Project 2 image">
-                <br>
-                <a href="project2.html">View Project</a>
+            <article class="featured">
+                <h2>Featured Project 1</h2>
+                <img alt="Project image placeholder">
+                <a href="project1.html">See more</a>
             </article>
 
+            <article class="featured">
+                <h2>Featured Project 2</h2>
+                <img alt="Project image placeholder">
+                <a href="project2.html">See more</a>
+            </article>
         </section>
 
     </div>
-
 </main>
 
-<!-- Footer like your drawing -->
 <footer>
-    <p>Explanation</p>
+    © 2025 – All rights reserved.
 </footer>
 
 </body>
