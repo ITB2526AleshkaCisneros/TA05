@@ -12,6 +12,10 @@ main {
     padding: 20px;
 }
 
+main .layout {
+    display: flex;
+}
+
 /* ===========================
    HEADER
 =========================== */
@@ -76,14 +80,6 @@ aside a:hover {
 }
 
 /* ===========================
-   MAIN CONTENT LAYOUT
-=========================== */
-
-main > div {
-    display: flex;
-}
-
-/* ===========================
    ARTICLES & SECTIONS
 =========================== */
 
@@ -99,10 +95,10 @@ article {
 }
 
 /* ===========================
-   HOME PAGE — FEATURED PROJECTS
+   HOME PAGE IMAGES
 =========================== */
 
-section article img {
+.featured img {
     width: 100%;
     background-color: #bbb;
     height: 150px;
@@ -111,25 +107,35 @@ section article img {
 }
 
 /* ===========================
-   PROJECT PAGES — IMAGE GRID
+   PROJECT GRID
 =========================== */
 
-section div img {
-    width: calc(50% - 10px);
-    background-color: #bbb;
-    height: 150px;
-    margin: 5px;
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
 }
 
-/* ===========================
-   PROJECT LIST PAGE
-=========================== */
+.project-item {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
 
-section article img {
+.project-item img {
     width: 100%;
-    height: 120px;
+    height: 150px;
     background-color: #bbb;
+    border-radius: 5px;
     display: block;
+    margin-bottom: 10px;
+}
+
+.project-item h3 {
+    margin: 0;
+    font-size: 1.1rem;
 }
 
 /* ===========================
