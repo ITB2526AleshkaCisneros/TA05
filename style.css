@@ -1,0 +1,168 @@
+/* ===========================
+   GENERAL PAGE STYLE
+=========================== */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+main {
+    padding: 20px;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* ===========================
+   LEFT SIDEBAR MENU
+=========================== */
+
+aside {
+    width: 200px;
+    background-color: #ddd;
+    padding: 20px;
+    margin-right: 20px;
+    height: fit-content;
+}
+
+aside h3 {
+    margin-top: 0;
+}
+
+aside ul {
+    padding: 0;
+    list-style: none;
+}
+
+aside li {
+    margin-bottom: 10px;
+}
+
+aside a {
+    text-decoration: none;
+    color: black;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+/* ===========================
+   MAIN CONTENT LAYOUT
+=========================== */
+
+main > div {
+    display: flex;
+}
+
+/* ===========================
+   ARTICLES & SECTIONS
+=========================== */
+
+section {
+    flex: 1;
+}
+
+article {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* ===========================
+   HOME PAGE — FEATURED PROJECTS
+=========================== */
+
+section article img {
+    width: 100%;
+    background-color: #bbb;
+    height: 150px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* ===========================
+   PROJECT PAGES — IMAGE GRID
+=========================== */
+
+section div img {
+    width: calc(50% - 10px);
+    background-color: #bbb;
+    height: 150px;
+    margin: 5px;
+}
+
+/* ===========================
+   PROJECT LIST PAGE
+=========================== */
+
+section article img {
+    width: 100%;
+    height: 120px;
+    background-color: #bbb;
+    display: block;
+}
+
+/* ===========================
+   CONTACT FORM
+=========================== */
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
