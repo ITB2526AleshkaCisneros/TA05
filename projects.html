@@ -1,80 +1,86 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="All Projects">
-    <link rel="stylesheet" href="style.css">
-    <title>All Projects</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="All Projects Page">
+   <link rel="stylesheet" href="style.css">
+   <title>All Projects - TA05</title>
 </head>
 
 <body>
 
-<header>
-    <h1>TA05 - HTML / CSS</h1>
-    <span>12/12/2024</span>
-</header>
+   <!-- Header -->
+   <header class="header">
+      <h1>Project Lists</h1>
+      <div class="date" id="current-date"></div>
+   </header>
 
-<main>
-    <div class="layout">
+   <!-- Main layout container -->
+   <div class="container">
 
-        <aside>
-            <h3>Menu</h3>
+      <!-- Sidebar Menu -->
+      <aside class="sidebar">
+         <h2>Menu</h2>
+         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="project1.html">Project 1</a></li>
-                <li><a href="project2.html">Project 2</a></li>
-                <li><a href="projects.html">All Projects</a></li>
-                <li><a href="contact.html">Contact Form</a></li>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="project1.html">Project 1</a></li>
+               <li><a href="project2.html">Project 2</a></li>
+               <li><a href="projects.html">All Projects</a></li>
+               <li><a href="contact.html">Contact Form</a></li>
             </ul>
-        </aside>
+         </nav>
+      </aside>
 
-        <section>
+      <!-- Main content area -->
+      <main class="projects-main-content">
 
-            <article>
-                <h2>All Projects</h2>
-                <p>List of all projects. The first one must link to the detail page.</p>
+         <!-- Grid of all projects -->
+         <section class="projects-grid">
+
+            <article class="project-card">
+               <h3>Project 1</h3>
+               <img src="#" alt="Project 1 image placeholder">
+               <a href="project1.html">See more</a>
             </article>
 
-            <div class="project-grid">
+            <article class="project-card">
+               <h3>Project 2</h3>
+               <img src="#" alt="Project 2 image placeholder">
+               <a href="project2.html">See more</a>
+            </article>
 
-                <div class="project-item">
-                    <a href="project1.html">
-                        <img alt="placeholder">
-                        <h3>Project 1</h3>
-                    </a>
-                </div>
+            <article class="project-card">
+               <h3>Project 3</h3>
+               <img src="#" alt="Project 3 image placeholder">
+            </article>
 
-                <div class="project-item">
-                    <img alt="placeholder">
-                    <h3>Project 2</h3>
-                </div>
+            <article class="project-card">
+               <h3>Project 4</h3>
+               <img src="#" alt="Project 4 image placeholder">
+            </article>
 
-                <div class="project-item">
-                    <img alt="placeholder">
-                    <h3>Project 3</h3>
-                </div>
+         </section>
 
-                <div class="project-item">
-                    <img alt="placeholder">
-                    <h3>Project 4</h3>
-                </div>
+      </main>
+   </div>
 
-            </div>
-
-        </section>
-
-    </div>
-</main>
-
-<footer>
-    © 2024 – All rights reserved.
-</footer>
-
-</body>
-</html>
-
-</footer>
+   <!-- Footer WITH explanation inside -->
+   <footer class="footer">
+      <h2>Explanation</h2>
+      <p>
+         This section contains additional notes or context about the list of projects.
+      </p>
+      <p>© 2024 – All rights reserved.</p>
+   </footer>
+<script>
+  const dateElement = document.getElementById("current-date");
+  const today = new Date();
+  const day = String(today.getDate()).padStart(2, '0');
+  const month = String(today.getMonth() + 1).padStart(2, '0');
+  const year = today.getFullYear();
+  dateElement.textContent = `${day}/${month}/${year}`;
+</script>
 
 </body>
 </html>
-
