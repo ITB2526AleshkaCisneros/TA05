@@ -1,58 +1,99 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home Page">
-    <link rel="stylesheet" href="style.css">
-    <title>TA05 - HTML / CSS</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Home Page for Portfolio">
+   <link rel="stylesheet" href="style.css">
+   <title>TA05 - HTML / CSS</title>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
-    <h1>TA05 - HTML / CSS</h1>
-    <span>12/12/2024</span>
-</header>
+   <!-- Header -->
+   <header class="header">
+      <h1>TA05 - HTML / CSS</h1>
+      <div class="date" id="current-date"></div>
+   </header>
 
-<main>
-    <div class="layout">
+   <!-- General Information rectangle (FULL WIDTH) -->
+   <section class="general-info">
+      <h2>General Information</h2>
+      <p>This is the homepage of our portfolio. Below are two featured projects.</p>
+   </section>
 
-        <aside>
-            <h3>Menu</h3>
+   <!-- Main layout container -->
+   <div class="container">
+
+      <!-- Sidebar Menu -->
+      <aside class="sidebar">
+         <h2>Menu</h2>
+         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="project1.html">Project 1</a></li>
-                <li><a href="project2.html">Project 2</a></li>
-                <li><a href="projects.html">All Projects</a></li>
-                <li><a href="contact.html">Contact Form</a></li>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="project1.html">Project 1</a></li>
+               <li><a href="project2.html">Project 2</a></li>
+               <li><a href="projects.html">All Projects</a></li>
+               <li><a href="contact.html">Contact Form</a></li>
             </ul>
-        </aside>
+         </nav>
+      </aside>
 
-        <section>
-            <article>
-                <h2>Welcome</h2>
-                <p>This is the main page with two featured projects.</p>
-            </article>
+      <!-- Main content area -->
+      <main class="main-content">
 
-            <article class="featured">
-                <h2>Featured Project 1</h2>
-                <img alt="Project image placeholder">
-                <a href="project1.html">See more</a>
-            </article>
+         <!-- Featured Projects in two columns -->
+         <section class="featured-projects">
 
-            <article class="featured">
-                <h2>Featured Project 2</h2>
-                <img alt="Project image placeholder">
-                <a href="project2.html">See more</a>
-            </article>
-        </section>
+            <div class="project">
+               <h3 class="project-title">Project 1 Title</h3>
 
-    </div>
-</main>
+               <div class="project-content">
+                  <div class="project-description">
+                     <p>Project 1 description goes here.</p>
+                     <a href="project1.html">See more</a>
+                  </div>
 
-<footer>
-    © 2025 – All rights reserved.
-</footer>
+                  <div class="project-image">
+                     <img src="#" alt="Project 1 image placeholder">
+                  </div>
+               </div>
+            </div>
+
+            <div class="project">
+               <h3 class="project-title">Project 2 Title</h3>
+
+               <div class="project-content">
+                  <div class="project-description">
+                     <p>Project 2 description goes here.</p>
+                     <a href="project2.html">See more</a>
+                  </div>
+
+                  <div class="project-image">
+                     <img src="#" alt="Project 2 image placeholder">
+                  </div>
+               </div>
+            </div>
+
+         </section>
+
+      </main>
+   </div>
+
+   <!-- Footer WITH Explanation inside -->
+   <footer class="footer">
+      <h2>Explanation</h2>
+      <p>This section provides additional context or summary about the portfolio or projects.</p>
+      <p>© 2025 – No rights reserved.</p>
+   </footer>
+<script>
+  const dateElement = document.getElementById("current-date");
+  const today = new Date();
+  const day = String(today.getDate()).padStart(2, '0');
+  const month = String(today.getMonth() + 1).padStart(2, '0');
+  const year = today.getFullYear();
+  dateElement.textContent = `${day}/${month}/${year}`;
+</script>
 
 </body>
 </html>
