@@ -1,62 +1,77 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact form">
-    <link rel="stylesheet" href="style.css">
-    <title>Contact</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Contact Form Page">
+   <link rel="stylesheet" href="style.css">
+   <title>Contact Form - TA05</title>
 </head>
 
 <body>
 
-<header>
-    <h1>Form</h1>
-</header>
+   <!-- Header -->
+   <header class="header">
+      <h1>Form</h1>
+      <div class="date" id="current-date"></div>
+   </header>
 
-<main>
+   <!-- Main layout container -->
+   <div class="container">
 
-    <div style="display:flex;">
+      <!-- Sidebar Menu -->
+      <aside class="sidebar">
+         <h2>Menu</h2>
+         <nav>
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="project1.html">Project 1</a></li>
+               <li><a href="project2.html">Project 2</a></li>
+               <li><a href="projects.html">All Projects</a></li>
+               <li><a href="contact.html">Contact Form</a></li>
+            </ul>
+         </nav>
+      </aside>
 
-        <aside>
-            <h3>Menu</h3>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">All Projects</a></li>
-                </ul>
-            </nav>
-        </aside>
+      <!-- Main content area -->
+      <main class="form-main-content">
 
-        <!-- FORM AREA -->
-        <section>
+         <form class="contact-form">
 
-            <form>
+            <label>Question 1</label>
+            <input type="text" placeholder="Enter your answer">
 
-                <label>Question 1</label>
-                <input type="text" required>
+            <label>Question 2</label>
+            <input type="text" placeholder="Enter your answer">
 
-                <label>Question 2</label>
-                <input type="text" required>
+            <label>Question 3</label>
+            <input type="text" placeholder="Enter your answer">
 
-                <label>Question 3</label>
-                <input type="text" required>
+            <label>Question 4</label>
+            <input type="text" placeholder="Enter your answer">
 
-                <label>Question 4</label>
-                <textarea required></textarea>
+            <button type="submit">Submit</button>
 
-                <button type="submit">Send</button>
-            </form>
+         </form>
 
-        </section>
+      </main>
+   </div>
 
-    </div>
-
-</main>
-
-<footer>
-    <p>Explanation</p>
-</footer>
+   <!-- Footer WITH explanation inside -->
+   <footer class="footer">
+      <h2>Explanation</h2>
+      <p>
+         This section contains additional notes or context about the contact form.
+      </p>
+      <p>© 2024 – All rights reserved.</p>
+   </footer>
+<script>
+  const dateElement = document.getElementById("current-date");
+  const today = new Date();
+  const day = String(today.getDate()).padStart(2, '0');
+  const month = String(today.getMonth() + 1).padStart(2, '0');
+  const year = today.getFullYear();
+  dateElement.textContent = `${day}/${month}/${year}`;
+</script>
 
 </body>
 </html>
