@@ -1,56 +1,91 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Project 2 details">
-    <link rel="stylesheet" href="style.css">
-    <title>Project 2</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Project 2 Detail Page">
+   <link rel="stylesheet" href="style.css">
+   <title>Project 2 - TA05</title>
 </head>
 
 <body>
 
-<header>
-    <h1>2nd Project</h1>
-</header>
+   <!-- Header: title of the page -->
+   <header class="header">
+      <h1>2nd Project</h1>
+      <div class="date" id="current-date"></div>
+   </header>
 
-<main>
+   <!-- Main layout container -->
+   <div class="container">
 
-    <div style="display:flex;">
+      <!-- Sidebar Menu -->
+      <aside class="sidebar">
+         <h2>Menu</h2>
+         <nav>
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="project1.html">Project 1</a></li>
+               <li><a href="project2.html">Project 2</a></li>
+               <li><a href="projects.html">All Projects</a></li>
+               <li><a href="contact.html">Contact Form</a></li>
+            </ul>
+         </nav>
+      </aside>
 
-        <aside>
-            <h3>Menu</h3>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">All Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </aside>
+      <!-- Main content area -->
+      <main class="project-main-content">
 
-        <section>
+         <!-- Top section: contents left + images right -->
+         <section class="project-top">
 
-            <article>
-                <h2>Explanation</h2>
-                <p>Here you can add the description and details of Project 2.</p>
+            <!-- Left: contents -->
+            <article class="project-contents">
+               <h2>Contents</h2>
+               <p>
+                  This section contains the detailed contents of the second project.
+                  You can describe the goals, technologies, and process here.
+               </p>
             </article>
 
-            <div>
-                <img src="" alt="Image 1">
-                <img src="" alt="Image 2">
-                <img src="" alt="Image 3">
-                <img src="" alt="Image 4">
-            </div>
+            <!-- Right: 4 images in a 2x2 grid -->
+            <section class="project-images-grid">
+               <div class="project-image-box">
+                  <img src="#" alt="Project 2 image 1 placeholder">
+               </div>
+               <div class="project-image-box">
+                  <img src="#" alt="Project 2 image 2 placeholder">
+               </div>
+               <div class="project-image-box">
+                  <img src="#" alt="Project 2 image 3 placeholder">
+               </div>
+               <div class="project-image-box">
+                  <img src="#" alt="Project 2 image 4 placeholder">
+               </div>
+            </section>
 
-        </section>
+         </section>
 
-    </div>
+      </main>
+   </div>
 
-</main>
-
-<footer>
-    <p>Explanation</p>
-</footer>
+   <!-- Footer WITH bottom explanation inside -->
+   <footer class="footer">
+      <h2>Explanation</h2>
+      <p>
+         This footer explanation can contain additional notes, conclusions,
+         or references related to the second project.
+      </p>
+      <p>© 2024 – All rights reserved.</p>
+   </footer>
+<script>
+  const dateElement = document.getElementById("current-date");
+  const today = new Date();
+  const day = String(today.getDate()).padStart(2, '0');
+  const month = String(today.getMonth() + 1).padStart(2, '0');
+  const year = today.getFullYear();
+  dateElement.textContent = `${day}/${month}/${year}`;
+</script>
 
 </body>
 </html>
+
