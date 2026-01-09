@@ -1,3 +1,7 @@
+.menu-toggle {
+   display: none;
+}
+
 body {
    margin: 0;
    font-family: Arial, sans-serif;
@@ -305,16 +309,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /*COLOR SAMPLER FOR TESTING PURPOSES - TO BE REMOVED LATER*/
 
 /* Rounded corners ONLY on the main project squares */
@@ -483,77 +477,66 @@ body {
 
 
 
+
+
+/* ===========================
+   MOBILE LAYOUT (max 768px)
+   =========================== */
 @media (max-width: 768px) {
 
-   /* Stack header elements */
-   .header {
-      flex-direction: column;
-      text-align: center;
-      gap: 0.5rem;
+   /* 1. Header stays normal, just add menu button */
+   .menu-toggle {
+      display: inline-block;
+      background: none;
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 0.3rem 0.6rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1.2rem;
    }
 
-   /* Sidebar becomes full-width on top */
+   /* 2. Sidebar becomes hidden off-screen */
+   .sidebar {
+      position: fixed;
+      top: 0;
+      left: -220px; /* hidden */
+      width: 200px;
+      height: 100vh;
+      background-color: #ffffff;
+      border-right: 1px solid #e0e0e0;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      transition: left 0.3s ease;
+      z-index: 1000;
+   }
+
+   /* Sidebar visible when toggled */
+   .sidebar.open {
+      left: 0;
+   }
+
+   /* 3. Container stacks vertically */
    .container {
       flex-direction: column;
    }
 
-   .sidebar {
-      width: 100%;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.5rem;
-      padding: 0.5rem;
-   }
-
-   /* Sidebar buttons shrink nicely */
-   .sidebar .btn {
-      padding: 10px 15px;
-      font-size: 0.9rem;
-   }
-
-   /* Main content gets full width */
-   .main-content,
-   .project-main-content,
-   .projects-main-content,
-   .form-main-content {
-      padding: 0.5rem;
-   }
-
-   /* Featured projects: 1 column instead of 2 */
+   /* 4. Featured projects become 1 column */
    .featured-projects {
       flex-direction: column;
    }
 
-   /* All projects grid becomes 1 column */
+   /* 5. All projects page becomes 1 column */
    .projects-grid {
       grid-template-columns: 1fr;
    }
 
-   /* Project cards stretch full width */
-   .project-card {
-      min-height: auto;
-   }
-
-   /* Project 1 page: stack content vertically */
-   .project-top {
-      flex-direction: column;
-   }
-
-   .project-images-grid {
-      grid-template-columns: 1fr 1fr;
-      height: auto;
-   }
-
-   /* Contact form fits mobile screens */
+   /* 6. Contact form fits screen */
    .contact-form {
       width: 100%;
       min-width: 0;
    }
 }
-
-
-
-
-
 
