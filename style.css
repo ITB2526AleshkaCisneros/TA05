@@ -290,8 +290,15 @@ body {
    border: 1px solid #aaa;
    cursor: pointer;
    font-weight: bold;
+   transition: transform 0.1s ease, box-shadow 0.1s ease;
+   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
+/* Push-down effect on click */
+.contact-form button:active {
+   transform: translateY(2px);
+   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
 
 
 
@@ -472,3 +479,81 @@ body {
       sweepFast 2.2s linear 1 1.5s, /* then faster sweeps */
       sweepFast 2.2s linear infinite 1.5s; /* infinite fast loop */
 }
+
+
+
+
+@media (max-width: 768px) {
+
+   /* Stack header elements */
+   .header {
+      flex-direction: column;
+      text-align: center;
+      gap: 0.5rem;
+   }
+
+   /* Sidebar becomes full-width on top */
+   .container {
+      flex-direction: column;
+   }
+
+   .sidebar {
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.5rem;
+   }
+
+   /* Sidebar buttons shrink nicely */
+   .sidebar .btn {
+      padding: 10px 15px;
+      font-size: 0.9rem;
+   }
+
+   /* Main content gets full width */
+   .main-content,
+   .project-main-content,
+   .projects-main-content,
+   .form-main-content {
+      padding: 0.5rem;
+   }
+
+   /* Featured projects: 1 column instead of 2 */
+   .featured-projects {
+      flex-direction: column;
+   }
+
+   /* All projects grid becomes 1 column */
+   .projects-grid {
+      grid-template-columns: 1fr;
+   }
+
+   /* Project cards stretch full width */
+   .project-card {
+      min-height: auto;
+   }
+
+   /* Project 1 page: stack content vertically */
+   .project-top {
+      flex-direction: column;
+   }
+
+   .project-images-grid {
+      grid-template-columns: 1fr 1fr;
+      height: auto;
+   }
+
+   /* Contact form fits mobile screens */
+   .contact-form {
+      width: 100%;
+      min-width: 0;
+   }
+}
+
+
+
+
+
+
