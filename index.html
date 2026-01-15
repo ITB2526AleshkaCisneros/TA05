@@ -19,8 +19,8 @@
 
    <!-- General Information rectangle (FULL WIDTH) -->
    <section class="general-info">
-      <h2>General Information</h2>
-      <p>This is the homepage of our portfolio. Below are two featured projects.</p>
+      <h2>Ale's portfolio</h2>
+      <p>Welcome to the homepage of my website. Here you’ll find the two main projects.</p>
    </section>
 
    <!-- Main layout container -->
@@ -29,14 +29,12 @@
       <!-- Sidebar Menu -->
       <aside class="sidebar">
          <h2>Menu</h2>
-         <nav>
-            <ul>
-               <li><a href="index.html">Home</a></li>
-               <li><a href="project1.html">Project 1</a></li>
-               <li><a href="project2.html">Project 2</a></li>
-               <li><a href="projects.html">All Projects</a></li>
-               <li><a href="contact.html">Contact Form</a></li>
-            </ul>
+         <nav class="menu-buttons">
+             <a href="index.html" class="menu-btn">Home</a>
+             <a href="project1.html" class="menu-btn">Project 1</a>
+             <a href="project2.html" class="menu-btn">Project 2</a>
+             <a href="projects.html" class="menu-btn">All Projects</a>
+             <a href="contact.html" class="menu-btn">Contact Form</a>
          </nav>
       </aside>
 
@@ -46,32 +44,40 @@
          <!-- Featured Projects in two columns -->
          <section class="featured-projects">
 
+            <!-- PROJECT 1 -->
             <div class="project">
-               <h3 class="project-title">Project 1 Title</h3>
+               <h3 class="project-title">Incident Data Processing</h3>
 
                <div class="project-content">
                   <div class="project-description">
-                     <p>Project 1 description goes here.</p>
+                     <p style="text-align: justify;">
+                        A workflow that converts raw incident data into clean, validated, and structured information.
+                        It automates the transformation process to ensure consistency, reduce errors, and improve overall data quality.
+                     </p>
                      <a href="project1.html">See more</a>
                   </div>
 
                   <div class="project-image">
-                     <img src="#" alt="Project 1 image placeholder">
+                     <img src="images/300.png" alt="Project 1 preview">
                   </div>
                </div>
             </div>
 
+            <!-- PROJECT 2 -->
             <div class="project">
-               <h3 class="project-title">Project 2 Title</h3>
+               <h3 class="project-title">Brute‑Force Login Detection System</h3>
 
                <div class="project-content">
                   <div class="project-description">
-                     <p>Project 2 description goes here.</p>
+                     <p style="text-align: justify;">
+                        Analyzes access logs to detect repeated failed logins and identify suspicious IP activity.
+                        The system highlights potential brute‑force attempts to strengthen monitoring and improve security awareness.
+                     </p>
                      <a href="project2.html">See more</a>
                   </div>
 
                   <div class="project-image">
-                     <img src="#" alt="Project 2 image placeholder">
+                     <img src="images/800.png" alt="Project 2 preview">
                   </div>
                </div>
             </div>
@@ -83,10 +89,10 @@
 
    <!-- Footer WITH Explanation inside -->
    <footer class="footer">
-      <h2>Explanation</h2>
-      <p>This section provides additional context or summary about the portfolio or projects.</p>
-      <p>© 2025 – No rights reserved.</p>
+      <p>This website was developed for the TA05 module project.</p>
+      <p>© 2026 – Created by Aleshka Cisneros.</p>
    </footer>
+
 <script>
   const dateElement = document.getElementById("current-date");
   const today = new Date();
