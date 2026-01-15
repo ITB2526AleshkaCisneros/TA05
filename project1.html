@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
    <meta charset="UTF-8">
@@ -11,7 +12,7 @@
 
    <!-- Header: title of the page -->
    <header class="header">
-      <h1>1st Project</h1>
+      <h1>Incident Data Processing</h1>
       <div class="date" id="current-date"></div>
    </header>
 
@@ -21,45 +22,67 @@
       <!-- Sidebar Menu -->
       <aside class="sidebar">
          <h2>Menu</h2>
-         <nav>
-            <ul>
-               <li><a href="index.html">Home</a></li>
-               <li><a href="project1.html">Project 1</a></li>
-               <li><a href="project2.html">Project 2</a></li>
-               <li><a href="projects.html">All Projects</a></li>
-               <li><a href="contact.html">Contact Form</a></li>
-            </ul>
+         <nav class="menu-buttons">
+            <a href="index.html" class="menu-btn">Home</a>
+            <a href="project1.html" class="menu-btn">Project 1</a>
+            <a href="project2.html" class="menu-btn">Project 2</a>
+            <a href="projects.html" class="menu-btn">All Projects</a>
+            <a href="contact.html" class="menu-btn">Contact Form</a>
          </nav>
       </aside>
 
       <!-- Main content area -->
       <main class="project-main-content">
 
-         <!-- Top section: contents left + images right -->
+         <!-- Top section: goals left + images right -->
          <section class="project-top">
 
-            <!-- Left: contents (shrunk horizontally) -->
+            <!-- Left: goals and explanation -->
             <article class="project-contents">
-               <h2>Contents</h2>
-               <p>
-                  This section contains the detailed contents of the first project.
-                  You can describe the goals, technologies, and process here.
-               </p>
+
+               <div class="fade-container">
+
+                  <div class="fade-line">
+                     <strong>Goals:</strong>
+                  </div>
+
+                  <ul class="fade-list" style="text-align: justify; line-height: 1.45; margin-top: 10px; padding-left: 20px;">
+                     <li class="fade-line" style="margin-bottom: 8px;">Collect and organize incident data from multiple sources.</li>
+                     <li class="fade-line" style="margin-bottom: 8px;">Transform CSV data into a structured XML format.</li>
+                     <li class="fade-line" style="margin-bottom: 8px;">Process and filter the XML using a custom Python script.</li>
+                     <li class="fade-line" style="margin-bottom: 8px;">Generate statistics.</li>
+                     <li class="fade-line" style="margin-bottom: 8px;">Store valid incidents in a clean JSON dataset.</li>
+                  </ul>
+
+                  <div class="fade-line" style="margin-top: 14px;">
+                     <strong>Explanation</strong>
+                  </div>
+
+                  <p class="fade-line" style="text-align: justify; line-height: 1.9; margin-top: 12px;">
+                     This project demonstrates how raw incident reports can be transformed into structured, reliable information.
+                     Using a workflow that includes <strong>CSV export</strong>, <strong>XML conversion</strong>, and
+                     <strong>Python‑based validation</strong>, the system filters incorrect entries, analyzes the data, and
+                     produces a final <strong>JSON file</strong> containing only valid incidents. The result is a streamlined
+                     process that turns unorganized input into <strong>clean, reusable, and meaningful data</strong>.
+                  </p>
+
+               </div>
+
             </article>
 
-            <!-- Right: 4 images in a 2x2 grid (expanded space) -->
+            <!-- Right: 4 images in a 2x2 grid -->
             <section class="project-images-grid">
                <div class="project-image-box">
-                  <img src="#" alt="Project 1 image 1 placeholder">
+                  <img src="images/400.png" alt="Main menu interface of the program">
                </div>
                <div class="project-image-box">
-                  <img src="#" alt="Project 1 image 2 placeholder">
+                  <img src="images/300.png" alt="Filtered incident report with BITXO ghost">
                </div>
                <div class="project-image-box">
-                  <img src="#" alt="Project 1 image 3 placeholder">
+                  <img src="images/200.png" alt="Python script converting CSV to XML">
                </div>
                <div class="project-image-box">
-                  <img src="#" alt="Project 1 image 4 placeholder">
+                  <img src="images/111.png" alt="Pie chart of affected equipment types">
                </div>
             </section>
 
@@ -70,13 +93,13 @@
 
    <!-- Footer WITH bottom explanation inside -->
    <footer class="footer">
-      <h2>Explanation</h2>
+      <h2>About This Project</h2>
       <p>
-         This footer explanation can contain additional notes, conclusions,
-         or references related to the first project.
+         Developed within the TA04 module, focusing on data transformation, validation, and automation workflows.
       </p>
-      <p>© 2024 – All rights reserved.</p>
+      <p>© 2026 – All rights reserved.</p>
    </footer>
+
 <script>
   const dateElement = document.getElementById("current-date");
   const today = new Date();
