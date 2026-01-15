@@ -11,7 +11,7 @@
 
    <!-- Header -->
    <header class="header">
-      <h1>Form</h1>
+      <h1>Contact Form</h1>
       <div class="date" id="current-date"></div>
    </header>
 
@@ -21,14 +21,12 @@
       <!-- Sidebar Menu -->
       <aside class="sidebar">
          <h2>Menu</h2>
-         <nav>
-            <ul>
-               <li><a href="index.html">Home</a></li>
-               <li><a href="project1.html">Project 1</a></li>
-               <li><a href="project2.html">Project 2</a></li>
-               <li><a href="projects.html">All Projects</a></li>
-               <li><a href="contact.html">Contact Form</a></li>
-            </ul>
+         <nav class="menu-buttons">
+            <a href="index.html" class="menu-btn">Home</a>
+            <a href="project1.html" class="menu-btn">Project 1</a>
+            <a href="project2.html" class="menu-btn">Project 2</a>
+            <a href="projects.html" class="menu-btn">All Projects</a>
+            <a href="contact.html" class="menu-btn">Contact Form</a>
          </nav>
       </aside>
 
@@ -37,16 +35,16 @@
 
          <form class="contact-form">
 
-            <label>Question 1</label>
+            <label>Name and Surname</label>
             <input type="text" placeholder="Enter your answer">
 
-            <label>Question 2</label>
+            <label>Email</label>
             <input type="text" placeholder="Enter your answer">
 
-            <label>Question 3</label>
+            <label>Phone Number</label>
             <input type="text" placeholder="Enter your answer">
 
-            <label>Question 4</label>
+            <label>Additional comments</label>
             <input type="text" placeholder="Enter your answer">
 
             <button type="submit">Submit</button>
@@ -60,10 +58,11 @@
    <footer class="footer">
       <h2>Explanation</h2>
       <p>
-         This section contains additional notes or context about the contact form.
+         Use this form to send your contact information or any questions/feedback.
       </p>
-      <p>© 2024 – All rights reserved.</p>
+      <p>© 2026 – All rights reserved.</p>
    </footer>
+
 <script>
   const dateElement = document.getElementById("current-date");
   const today = new Date();
