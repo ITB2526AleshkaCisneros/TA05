@@ -1,5 +1,6 @@
 
 📌 Overview
+
 This website was developed as part of the TA05 module project, with the goal of presenting a structured, interactive, and visually consistent portfolio of cybersecurity‑related assignments.
 The site is coded using HTML, CSS, and JavaScript, with a focus on clean layout and clear navigation.
 
@@ -8,6 +9,7 @@ The project includes multiple pages, each dedicated to a specific task or demons
 
 
 📁 Website Structure
+
 The website is organized into the following main sections:
 
 1. Home Page
