@@ -4,14 +4,14 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="description" content="Project 2 Detail Page">
    <link rel="stylesheet" href="style.css">
-   <title>Project 2 - TA05</title>
+   <title>Project 2 - Brute Force Detection</title>
 </head>
 
 <body>
 
-   <!-- Header: title of the page -->
+   <!-- Header -->
    <header class="header">
-      <h1>2nd Project</h1>
+      <h1>Brute‑Force Login Detection System</h1>
       <div class="date" id="current-date"></div>
    </header>
 
@@ -21,45 +21,65 @@
       <!-- Sidebar Menu -->
       <aside class="sidebar">
          <h2>Menu</h2>
-         <nav>
-            <ul>
-               <li><a href="index.html">Home</a></li>
-               <li><a href="project1.html">Project 1</a></li>
-               <li><a href="project2.html">Project 2</a></li>
-               <li><a href="projects.html">All Projects</a></li>
-               <li><a href="contact.html">Contact Form</a></li>
-            </ul>
+         <nav class="menu-buttons">
+            <a href="index.html" class="menu-btn">Home</a>
+            <a href="project1.html" class="menu-btn">Project 1</a>
+            <a href="project2.html" class="menu-btn">Project 2</a>
+            <a href="projects.html" class="menu-btn">All Projects</a>
+            <a href="contact.html" class="menu-btn">Contact Form</a>
          </nav>
       </aside>
 
       <!-- Main content area -->
       <main class="project-main-content">
 
-         <!-- Top section: contents left + images right -->
+         <!-- Top section: goals left + images right -->
          <section class="project-top">
 
-            <!-- Left: contents -->
+            <!-- Left: goals and explanation -->
             <article class="project-contents">
-               <h2>Contents</h2>
-               <p>
-                  This section contains the detailed contents of the second project.
-                  You can describe the goals, technologies, and process here.
-               </p>
+
+               <div class="fade-container">
+
+                  <div class="fade-line">
+                     <strong>Goals:</strong>
+                  </div>
+
+                  <ul class="fade-list" style="text-align: justify; line-height: 1.45; margin-top: 10px; padding-left: 20px;">
+                     <li class="fade-line" style="margin-bottom: 8px;">Collect and analyze server access logs.</li>
+                     <li class="fade-line" style="margin-bottom: 8px;">Identify repeated failed login attempts and suspicious IP.</li>
+                     <li class="fade-line" style="margin-bottom: 8px;">Detect brute‑force behavior using threshold‑based rules.</li>
+                     <li class="fade-line" style="margin-bottom: 8px;">Visualize login failures and attack trends in a simple dashboard.</li>
+                  </ul>
+
+                  <div class="fade-line" style="margin-top: 14px;">
+                     <strong>Explanation</strong>
+                  </div>
+
+                  <p class="fade-line" style="text-align: justify; line-height: 1.9; margin-top: 12px;">
+                     This project focuses on detecting brute‑force login attempts by analyzing server access logs. A Python
+                     script processes raw log entries, extracts IP addresses, timestamps, and login results, and identifies
+                     suspicious behavior based on repeated failed attempts. The processed data is stored in JSON format and
+                     used to generate visual statistics that highlight attack patterns.
+                  </p>
+
+               </div>
+
             </article>
 
             <!-- Right: 4 images in a 2x2 grid -->
             <section class="project-images-grid">
                <div class="project-image-box">
-                  <img src="#" alt="Project 2 image 1 placeholder">
+                  <img src="images/500.png" alt="Server access log screenshot">
                </div>
                <div class="project-image-box">
-                  <img src="#" alt="Project 2 image 2 placeholder">
+                  <img src="images/600.png" alt="Python log analyzer code">
                </div>
                <div class="project-image-box">
-                  <img src="#" alt="Project 2 image 3 placeholder">
+                  <img src="images/700.png" alt="Brute force attack diagram">
                </div>
                <div class="project-image-box">
-                  <img src="#" alt="Project 2 image 4 placeholder">
+                  <img src="images/800.png" alt="Failed login attempts chart">
                </div>
             </section>
 
@@ -68,15 +88,15 @@
       </main>
    </div>
 
-   <!-- Footer WITH bottom explanation inside -->
+   <!-- Footer -->
    <footer class="footer">
-      <h2>Explanation</h2>
+      <h2>About This Project</h2>
       <p>
-         This footer explanation can contain additional notes, conclusions,
-         or references related to the second project.
+         Built to explore real‑world cybersecurity practices such as log monitoring, intrusion detection, and automated threat analysis.
       </p>
-      <p>© 2024 – All rights reserved.</p>
+      <p>© 2026 – All rights reserved.</p>
    </footer>
+
 <script>
   const dateElement = document.getElementById("current-date");
   const today = new Date();
@@ -88,4 +108,3 @@
 
 </body>
 </html>
-
