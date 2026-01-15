@@ -21,14 +21,12 @@
       <!-- Sidebar Menu -->
       <aside class="sidebar">
          <h2>Menu</h2>
-         <nav>
-            <ul>
-               <li><a href="index.html">Home</a></li>
-               <li><a href="project1.html">Project 1</a></li>
-               <li><a href="project2.html">Project 2</a></li>
-               <li><a href="projects.html">All Projects</a></li>
-               <li><a href="contact.html">Contact Form</a></li>
-            </ul>
+         <nav class="menu-buttons">
+            <a href="index.html" class="menu-btn">Home</a>
+            <a href="project1.html" class="menu-btn">Project 1</a>
+            <a href="project2.html" class="menu-btn">Project 2</a>
+            <a href="projects.html" class="menu-btn">All Projects</a>
+            <a href="contact.html" class="menu-btn">Contact Form</a>
          </nav>
       </aside>
 
@@ -38,26 +36,94 @@
          <!-- Grid of all projects -->
          <section class="projects-grid">
 
+            <!-- PROJECT 1 -->
             <article class="project-card">
-               <h3>Project 1</h3>
-               <img src="#" alt="Project 1 image placeholder">
-               <a href="project1.html">See more</a>
+               <h3><a href="project1.html">Incident Data Processing</a></h3>
+               <img src="images/300.png" alt="Project 1 preview">
+               <div class="project-description-overlay">
+                  Converts raw incident data into clean, validated, structured information.
+               </div>
             </article>
 
+            <!-- PROJECT 2 -->
             <article class="project-card">
-               <h3>Project 2</h3>
-               <img src="#" alt="Project 2 image placeholder">
-               <a href="project2.html">See more</a>
+               <h3><a href="project2.html">Brute‑Force Login Detection System</a></h3>
+               <img src="images/800.png" alt="Project 2 preview">
+               <div class="project-description-overlay">
+                  Detects repeated failed logins and flags suspicious IP activity.
+               </div>
             </article>
 
+            <!-- PROJECT 3 -->
             <article class="project-card">
-               <h3>Project 3</h3>
-               <img src="#" alt="Project 3 image placeholder">
+               <h3>Network Intrusion Detection System</h3>
+               <img src="images/3.jpg" alt="Intrusion Detection System dashboard">
+               <div class="project-description-overlay">
+                  Detects suspicious network traffic using rule‑based and anomaly‑based analysis.
+               </div>
             </article>
 
+            <!-- PROJECT 4 -->
             <article class="project-card">
-               <h3>Project 4</h3>
-               <img src="#" alt="Project 4 image placeholder">
+               <h3>Phishing Email Analyzer</h3>
+               <img src="images/4.jpg" alt="Phishing detection interface">
+               <div class="project-description-overlay">
+                  Automatically identifies phishing attempts using header inspection and NLP.
+               </div>
+            </article>
+
+            <!-- PROJECT 5 -->
+            <article class="project-card">
+               <h3>Password Strength Auditor</h3>
+               <img src="images/5.jpg" alt="Password security analysis">
+               <div class="project-description-overlay">
+                  Evaluates password strength and detects weak or reused credentials.
+               </div>
+            </article>
+
+            <!-- PROJECT 6 -->
+            <article class="project-card">
+               <h3>Firewall Rule Optimization Tool</h3>
+               <img src="images/6.png" alt="Firewall configuration screen">
+               <div class="project-description-overlay">
+                  Analyzes firewall rules to remove redundancies and improve security.
+               </div>
+            </article>
+
+            <!-- PROJECT 7 -->
+            <article class="project-card">
+               <h3>Vulnerability Scanner Prototype</h3>
+               <img src="images/7.jpg" alt="Vulnerability scan results">
+               <div class="project-description-overlay">
+                  Scans systems for outdated software, misconfigurations, and known CVEs.
+               </div>
+            </article>
+
+            <!-- PROJECT 8 -->
+            <article class="project-card">
+               <h3>Secure File Encryption Utility</h3>
+               <img src="images/8.jpg" alt="File encryption interface">
+               <div class="project-description-overlay">
+                  Encrypts files using AES‑256 with a simple and intuitive interface.
+               </div>
+            </article>
+
+            <!-- PROJECT 9 -->
+            <article class="project-card">
+               <h3>Malware Behavior Sandbox</h3>
+               <img src="images/9.png" alt="Malware sandbox analysis">
+               <div class="project-description-overlay">
+                  Executes malware safely to observe behavior and extract indicators.
+               </div>
+            </article>
+
+            <!-- PROJECT 10 -->
+            <article class="project-card">
+               <h3>Wi‑Fi Penetration Testing Toolkit</h3>
+               <img src="images/10.png" alt="Wi-Fi penetration testing tools">
+               <div class="project-description-overlay">
+                  Performs Wi‑Fi audits including handshake capture and network mapping.
+               </div>
             </article>
 
          </section>
@@ -65,22 +131,21 @@
       </main>
    </div>
 
-   <!-- Footer WITH explanation inside -->
+   <!-- Footer -->
    <footer class="footer">
       <h2>Explanation</h2>
-      <p>
-         This section contains additional notes or context about the list of projects.
-      </p>
-      <p>© 2024 – All rights reserved.</p>
+      <p>This page presents the full collection of projects completed</p>
+      <p>© 2026 – All rights reserved.</p>
    </footer>
-<script>
-  const dateElement = document.getElementById("current-date");
-  const today = new Date();
-  const day = String(today.getDate()).padStart(2, '0');
-  const month = String(today.getMonth() + 1).padStart(2, '0');
-  const year = today.getFullYear();
-  dateElement.textContent = `${day}/${month}/${year}`;
-</script>
+
+   <script>
+      const dateElement = document.getElementById("current-date");
+      const today = new Date();
+      const day = String(today.getDate()).padStart(2, '0');
+      const month = String(today.getMonth() + 1).padStart(2, '0');
+      const year = today.getFullYear();
+      dateElement.textContent = `${day}/${month}/${year}`;
+   </script>
 
 </body>
 </html>
